@@ -2,24 +2,23 @@ name:  React CI Pipeline
 
 on: 
   push:
-    workflow_dispatch
 
 jobs: 
   build-and-test: 
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Code
+        name: Checkout Code
         uses: actions/checkout@v4
-      - name: Install Node.js
+        name: Install Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '18'
 
-      - name: Install Dependencies
+        name: Install Dependencies
         run: npm install
 
-      - name: Run Tests
+        name: Run Tests
         run: npm test
 
-      - name: Build App
+        name: Build App
         run: npm run build
