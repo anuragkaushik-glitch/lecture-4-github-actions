@@ -1,8 +1,8 @@
 name:  React CI Pipeline
 
-on: 
+on:
   push:
-  workflow-dispatch:
+  workflow_dispatch:
 
 jobs: 
   build: 
