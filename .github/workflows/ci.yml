@@ -1,6 +1,8 @@
 name:  React CI Pipeline
 
-on: push
+on: 
+  push:
+    workflow_dispatch
 
 jobs: 
   build-and-test: 
@@ -21,4 +23,3 @@ jobs:
 
       - name: Build App
         run: npm run build
-
