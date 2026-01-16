@@ -1,7 +1,6 @@
 name:  React CI Pipeline
 
-on: 
-  push:
+on: push
 
 jobs: 
   build: 
@@ -19,7 +18,7 @@ jobs:
 
       - name: Run Tests
         run: npm test
-        
+
   test:
     runs-on: ubuntu-latest
     steps:
