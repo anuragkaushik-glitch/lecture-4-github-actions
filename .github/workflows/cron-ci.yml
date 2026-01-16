@@ -10,13 +10,13 @@ jobs:
   nightly-build:
     runs-on: ubuntu-latest
     steps:
-        name: Checkout Code
-        uses: actions/checkout@v4
+        - name: Checkout Code
+          uses: actions/checkout@v4
         
-        name: Log the Time
-        run: echo "Starting nightly maintenance task..."
+        - name: Log the Time
+          run: echo "Starting nightly maintenance task..."
         
-        name: Install & Test
-        run: |
-          npm install
-          npm test
+        - name: Install & Test
+          run: |
+            npm install
+            npm test
